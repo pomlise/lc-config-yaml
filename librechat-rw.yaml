@@ -1,0 +1,19 @@
+version: 1.0.8
+
+cache: true
+
+registration:
+  socialLogins: ["discord", "facebook", "github", "google", "openid"]
+
+endpoints:
+  custom:
+    #cohere
+    - name: "cohere"
+      apiKey: "user_provided"
+      baseURL: "https://api.cohere.ai/v1"
+      models:
+        default: ["command-r-plus","command-r","command-light","command-light-nightly","command","command-nightly"]
+        fetch: false
+      modelDisplayLabel: "cohere"
+      titleModel: "command"
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
