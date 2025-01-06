@@ -17,3 +17,17 @@ endpoints:
       modelDisplayLabel: "cohere"
       titleModel: "command"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
+    #xai
+    - name: "xai"
+      apiKey: "user_provided"
+      baseURL: "https://api.x.ai/v1"
+      models:
+        default: ["grok-2-1212", "grok-2-vision-1212", "grok-vision-beta", "grok-beta"]
+        fetch: false
+      titleConvo: true
+      titleMethod: "completion"
+      titleModel: "grok-2-1212"
+      summarize: false
+      summaryModel: "grok-2-1212"
+      forcePrompt: false
+      modelDisplayLabel: "Grok"
