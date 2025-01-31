@@ -31,6 +31,7 @@ endpoints:
       summaryModel: "grok-2-1212"
       forcePrompt: false
       modelDisplayLabel: "Grok"
+    #Mistral
     - name: "Mistral"
       apiKey: "user_provided"
       baseURL: "https://api.mistral.ai/v1"
