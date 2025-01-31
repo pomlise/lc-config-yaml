@@ -31,3 +31,13 @@ endpoints:
       summaryModel: "grok-2-1212"
       forcePrompt: false
       modelDisplayLabel: "Grok"
+    - name: "Mistral"
+      apiKey: "user_provided"
+      baseURL: "https://api.mistral.ai/v1"
+      models:
+        default: ["mistral-large-latest", "mistral-tiny", "mistral-small", "mistral-medium"]
+        fetch: true
+      titleConvo: true
+      titleModel: "mistral-tiny"
+      modelDisplayLabel: "Mistral"
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
