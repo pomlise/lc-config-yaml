@@ -31,6 +31,16 @@ endpoints:
       summaryModel: "grok-2-1212"
       forcePrompt: false
       modelDisplayLabel: "Grok"
+    #Deepseek
+    - name: "Deepseek"
+      apiKey: "user_provided"
+      baseURL: "https://api.deepseek.com/v1"
+      models:
+        default: ["deepseek-reasoner", "deepseek-chat", "deepseek-coder"]
+        fetch: false
+      titleConvo: true
+      titleModel: "deepseek-chat"
+      modelDisplayLabel: "Deepseek"
     #Mistral
     - name: "Mistral"
       apiKey: "user_provided"
