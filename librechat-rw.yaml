@@ -1,4 +1,4 @@
-version: 1.0.8
+version: 1.2.1
 
 cache: true
 
@@ -12,8 +12,9 @@ endpoints:
       apiKey: "user_provided"
       baseURL: "https://api.cohere.ai/v1"
       models:
-        default: ["command-r-plus","command-r","command-light","command-light-nightly","command","command-nightly"]
+        default: ["command-r-plus-08-2024", "command-r-plus","command-r","command-light","command-light-nightly","command","command-nightly"]
         fetch: false
+      stream: true
       modelDisplayLabel: "cohere"
       titleModel: "command"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
