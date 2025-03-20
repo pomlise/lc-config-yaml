@@ -12,7 +12,7 @@ endpoints:
       apiKey: "user_provided"
       baseURL: "https://api.cohere.ai/v1"
       models:
-        default: ["command-r-plus-08-2024", "command-r-plus","command-r","command-light","command-light-nightly","command","command-nightly"]
+        default: ["command-a-03-2025", "command-r7b-12-2024", "command-r-plus-08-2024", "command-r-plus","command-r","command-light","command-light-nightly","command","command-nightly"]
         fetch: false
       stream: true
       modelDisplayLabel: "cohere"
