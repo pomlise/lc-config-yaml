@@ -32,13 +32,13 @@ endpoints:
       apiKey: "user_provided"
       baseURL: "https://api.x.ai/v1"
       models:
-        default: ["grok-2-1212", "grok-2-vision-1212", "grok-vision-beta", "grok-beta"]
+        default: ["grok-3-beta", "grok-3-fast-beta", "grok-2-1212", "grok-2-vision-1212", "grok-vision-beta", "grok-beta"]
         fetch: false
       titleConvo: true
       titleMethod: "completion"
-      titleModel: "grok-2-1212"
+      titleModel: "grok-3-beta"
       summarize: false
-      summaryModel: "grok-2-1212"
+      summaryModel: "grok-3-beta"
       forcePrompt: false
       modelDisplayLabel: "Grok"
     #Mistral
