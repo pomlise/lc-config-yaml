@@ -12,7 +12,7 @@ endpoints:
       apiKey: "user_provided"
       baseURL: "https://us-east-1.api.x.ai/v1"
       models:
-        default: ['grok-4', "grok-3", "grok-3-fast", "grok-2-1212", "grok-2-vision-1212"]
+        default: [grok-4, "grok-3", "grok-3-fast", "grok-2-1212", "grok-2-vision-1212"]
         fetch: false
       titleConvo: true
       titleMethod: "completion"
