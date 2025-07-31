@@ -7,27 +7,7 @@ registration:
 
 endpoints:
   custom:
-    #Deepseek
-    - name: "Deepseek"
-      apiKey: "user_provided"
-      baseURL: "https://api.deepseek.com/v1"
-      models:
-        default: ["deepseek-chat", "deepseek-reasoner", "deepseek-coder"]
-        fetch: false
-      titleConvo: true
-      titleModel: "deepseek-chat"
-      modelDisplayLabel: "Deepseek"
-    #cohere
-    - name: "cohere"
-      apiKey: "user_provided"
-      baseURL: "https://api.cohere.ai/v1"
-      models:
-        default: ["command-a-03-2025", "command-r7b-12-2024", "command-r-plus-08-2024", "command-r-plus","command-r","command-light","command-light-nightly","command","command-nightly"]
-        fetch: false
-      modelDisplayLabel: "cohere"
-      titleModel: "command"
-      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
-    #xai
+    # xai
     - name: "xai"
       apiKey: "user_provided"
       baseURL: "https://api.x.ai/v1"
@@ -41,7 +21,27 @@ endpoints:
       summaryModel: "grok-3"
       forcePrompt: false
       modelDisplayLabel: "Grok"
-    #Mistral
+    # Deepseek
+    - name: "Deepseek"
+      apiKey: "user_provided"
+      baseURL: "https://api.deepseek.com/v1"
+      models:
+        default: ["deepseek-chat", "deepseek-reasoner", "deepseek-coder"]
+        fetch: false
+      titleConvo: true
+      titleModel: "deepseek-chat"
+      modelDisplayLabel: "Deepseek"
+    # cohere
+    - name: "cohere"
+      apiKey: "user_provided"
+      baseURL: "https://api.cohere.ai/v1"
+      models:
+        default: ["command-a-03-2025", "command-r7b-12-2024", "command-r-plus-08-2024", "command-r-plus","command-r","command-light","command-light-nightly","command","command-nightly"]
+        fetch: false
+      modelDisplayLabel: "cohere"
+      titleModel: "command"
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
+    # Mistral
     - name: "Mistral"
       apiKey: "user_provided"
       baseURL: "https://api.mistral.ai/v1"
