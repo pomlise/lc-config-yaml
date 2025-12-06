@@ -12,13 +12,13 @@ endpoints:
       apiKey: "user_provided"
       baseURL: "https://api.x.ai/v1"
       models:
-        default: [grok-4-fast-non-reasoning, grok-4, "grok-3", "grok-2-1212", "grok-2-vision-1212"]
+        default: [grok-4-1-fast-non-reasoning, grok-4-fast-non-reasoning, grok-4, "grok-3"]
         fetch: false
       titleConvo: true
       titleMethod: "completion"
-      titleModel: "grok-3"
+      titleModel: "grok-4"
       summarize: false
-      summaryModel: "grok-3"
+      summaryModel: "grok-4"
       forcePrompt: false
       modelDisplayLabel: "Grok"
     # Deepseek
