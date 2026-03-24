@@ -12,7 +12,12 @@ endpoints:
       apiKey: "user_provided"
       baseURL: "https://api.x.ai/v1"
       models:
-        default: [grok-4-1-fast-non-reasoning, grok-4-fast-non-reasoning, grok-4, "grok-3"]
+        default: [
+          grok-4.20-non-reasoning,
+          grok-4-1-fast-non-reasoning,
+          grok-4-fast-non-reasoning,
+          grok-4
+        ]
         fetch: false
       titleConvo: true
       titleMethod: "completion"
@@ -21,6 +26,20 @@ endpoints:
       summaryModel: "grok-4"
       forcePrompt: false
       modelDisplayLabel: "Grok"
+    # together.ai
+    - name: "together.ai"
+      apiKey: "user_provided"
+      baseURL: "https://api.together.xyz"
+      models:
+        default: [
+          "Qwen/Qwen3.5-397B-A17B"
+        ]
+        fetch: false # fetching list of models is not supported
+      titleConvo: true
+      titleModel: "Qwen/Qwen3.5-397B-A17B"
+      summarize: false
+      summaryModel: "Qwen/Qwen3.5-397B-A17B"
+      modelDisplayLabel: "together.ai"
     # Deepseek
     - name: "Deepseek"
       apiKey: "user_provided"
