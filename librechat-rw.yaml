@@ -26,26 +26,12 @@ endpoints:
       summaryModel: "grok-4"
       forcePrompt: false
       modelDisplayLabel: "Grok"
-    # together.ai
-    #- name: "together.ai"
-    #  apiKey: "user_provided"
-    #  baseURL: "https://api.together.xyz/v1"
-    #  models:
-    #    default: [
-    #      "Qwen/Qwen3.5-397B-A17B"
-    #    ]
-    #    fetch: false # fetching list of models is not supported
-    #  titleConvo: true
-    #  titleModel: "Qwen/Qwen3.5-397B-A17B"
-    #  summarize: false
-    #  summaryModel: "Qwen/Qwen3.5-397B-A17B"
-    #  modelDisplayLabel: "together.ai"
     # Deepseek
     - name: "Deepseek"
       apiKey: "user_provided"
-      baseURL: "https://api.deepseek.com/v1"
+      baseURL: "https://api.deepseek.com"
       models:
-        default: ["deepseek-chat", "deepseek-reasoner", "deepseek-coder"]
+        default: ["deepseek-v4-pro", "deepseek-v4-flash"]
         fetch: false
       titleConvo: true
       titleModel: "deepseek-chat"
@@ -53,9 +39,9 @@ endpoints:
     # cohere
     - name: "cohere"
       apiKey: "user_provided"
-      baseURL: "https://api.cohere.ai/v1"
+      baseURL: "https://api.cohere.ai/compatibility/v1"
       models:
-        default: ["command-a-03-2025", "command-r7b-12-2024", "command-r-plus-08-2024", "command-r-plus","command-r","command-light","command-light-nightly","command","command-nightly"]
+        default: ["command-a-plus-05-2026", "command-a-03-2025", "command-a-vision-07-2025"]
         fetch: false
       modelDisplayLabel: "cohere"
       titleModel: "command"
